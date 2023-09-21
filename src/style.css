@@ -1,0 +1,87 @@
+body {
+  background: black;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/tokyo\ tower.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+header h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 96px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+header h1,
+h2 {
+  color: white;
+}
+header h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+  margin: 0;
+}
+header h3 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  margin: 0;
+  line-height: 0.6;
+  margin-bottom: -40px;
+  font-size: 35px;
+}
+header a {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-family: "Dosis", sans-serif;
+}
+footer a {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+    line-height: 2.3;
+  }
+  header a {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
