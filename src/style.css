@@ -53,14 +53,47 @@ header a {
   text-transform: uppercase;
   background: white;
 }
+main {
+  background-color: white;
+}
+main h2 {
+  color: black;
+  font-family: "Dosis", sans-serif;
+  opacity: 0.7;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-family: "Dosis", sans-serif;
+  opacity: 0.7;
+  font-size: 20px;
+  line-height: 1.5;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+
   grid-gap: 64px;
+}
+.grid-2-column {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-column-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 footer h3 {
   font-weight: bold;
@@ -77,7 +110,6 @@ footer {
   background-repeat: no-repeat;
   color: white;
   font-family: "Dosis", sans-serif;
-  padding: 100px 0;
 }
 footer ul {
   padding: 0;
@@ -90,11 +122,13 @@ footer li {
 }
 footer p {
   opacity: 0.7;
-  margin-right: 20px;
 }
 
 footer a {
   color: white;
+}
+.img-responsive {
+  max-width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -117,5 +151,13 @@ footer a {
   header a {
     font-size: 10px;
     padding: 10px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
