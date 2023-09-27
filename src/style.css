@@ -6,6 +6,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+/* headings */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/images/tokyo\ tower.jpg);
@@ -53,6 +54,7 @@ header a {
   text-transform: uppercase;
   background: white;
 }
+/* main-body */
 main {
   background-color: white;
 }
@@ -79,26 +81,22 @@ main p {
   font-size: 20px;
   line-height: 1.5;
 }
-.grid {
-  display: grid;
-
-  grid-gap: 64px;
+main h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 24px;
+  opacity: 0.7;
+  margin: 0;
+  line-height: 1;
 }
-.grid-2-column {
-  grid-template-columns: 1fr 1fr;
+main h5 {
+  font-size: 18px;
+  line-height: 1.5px;
+  font-family: "Dosis", sans-serif;
+  opacity: 0.7;
+  margin: 0;
+  line-height: 1;
 }
-.grid-3-column-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-footer h3 {
-  font-weight: bold;
-}
-
+/* footing */
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.8),
@@ -127,10 +125,61 @@ footer p {
 footer a {
   color: white;
 }
+footer h3 {
+  font-weight: bold;
+}
+/* grid-set-up */
+.grid {
+  display: grid;
+
+  grid-gap: 64px;
+}
+.grid-2-column {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-column-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* card-set-up */
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 32px;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  display: block;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+/* sections */
+section {
+  max-width: 100%px;
+  margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
+}
+
 .img-responsive {
   max-width: 100%;
 }
-
+/* responsiveness */
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
