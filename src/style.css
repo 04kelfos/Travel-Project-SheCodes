@@ -9,7 +9,7 @@ body {
 /* headings */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/tokyo\ tower.jpg);
+    url(/images/tokyo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,11 +148,18 @@ footer h3 {
   background: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 32px;
 }
 .text-center {
   text-align: center;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .btn {
   display: block;
@@ -177,7 +184,8 @@ section.secondary {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 /* responsiveness */
 @media (max-width: 900px) {
@@ -208,5 +216,11 @@ section.secondary {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
