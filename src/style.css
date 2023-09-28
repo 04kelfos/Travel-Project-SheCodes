@@ -187,6 +187,7 @@ section.secondary {
   width: 100%;
   display: block;
 }
+
 /* responsiveness */
 @media (max-width: 900px) {
   header {
